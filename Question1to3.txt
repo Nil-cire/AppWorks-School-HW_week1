@@ -1,0 +1,39 @@
+// AppWorks School Homework of Android - Week 1
+
+// Q1
+a. val id = 9527
+    -> Correct, 9527 was inferred to Int here (If exceeds the range of Int the infer to Long instead).
+
+b. var number: Int = 5.6
+    -> Incorrect, Number with decimal point are infer to Double.
+
+c. var title = "Hello Kotlin!"
+    -> Correct, title was inferred to String here.
+
+d. val content: String = null
+    -> Incorrect, if a variable can of is null, it should be declare with a Question mark.
+
+e. val number: Double = 556.6
+    -> Correct, number with decimal point are inferred to Double.
+
+f. var list: List<String>? = listOf(null, null)
+    -> Incorrect, components in the list are null, so a Question mark after the String type is required.
+
+g. var list: List<String?>? = ListOf("Wayne", "Chen")
+    -> Correct, components in the list are Strings.
+
+h. list.size
+    -> Incorrect, the variable "list" is assigned a nullable type, so a Question mark after the variable is required since it could be null.
+
+i. list?.size
+    -> Correct, the chance of the variable to be null is handled by the Question mark.
+
+
+// Q2
+message.length == 2
+The answer is c."Your grace."
+
+
+//Q3
+The answer is d. val array = Array(6) {1000.0.pow(it)}
+Setting a array with 6 values and each of them are powered by their own index value.
